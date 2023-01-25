@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\bin\Debug\net7.0\Example_001_hello_consol.exe
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\bin\Debug\net7.0\Example_001_hello_consol.deps.json
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\bin\Debug\net7.0\Example_001_hello_consol.runtimeconfig.json
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\bin\Debug\net7.0\Example_001_hello_consol.dll
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\bin\Debug\net7.0\Example_001_hello_consol.pdb
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\obj\Debug\net7.0\Example_001_hello_consol.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\obj\Debug\net7.0\Example_001_hello_consol.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\obj\Debug\net7.0\Example_001_hello_consol.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\obj\Debug\net7.0\Example_001_hello_consol.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\obj\Debug\net7.0\Example_001_hello_consol.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\obj\Debug\net7.0\Example_001_hello_consol.dll
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\obj\Debug\net7.0\refint\Example_001_hello_consol.dll
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\obj\Debug\net7.0\Example_001_hello_consol.pdb
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\obj\Debug\net7.0\Example_001_hello_consol.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Test Csharp\Example_001_hello_consol\obj\Debug\net7.0\ref\Example_001_hello_consol.dll
