@@ -7,14 +7,17 @@ Console.Clear();
 //Console.WriteLine("+");
 int xa = 1;
 int ya = 1;
-int xb = 2; 
-int yb = 20;
+int xb = 20; 
+int yb = 4;
 int xc = 40;
-int yc  = 40;
+int yc  = 6;
 int x = xa;
 int y = ya;
 int cout = 0;
-while (cout < 1000) 
+Console.SetCursorPosition(80, 4);
+
+Console.WriteLine('*');
+while (cout < 100) 
 { 
     int w = new Random().Next(0, 3);
     if (w == 0)
