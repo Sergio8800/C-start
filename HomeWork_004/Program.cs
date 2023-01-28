@@ -1,11 +1,11 @@
-﻿Console.Write("Введите число:");
+﻿using System.Diagnostics.Metrics;
+
+Console.Write("Введите число:");
 string str1 = Console.ReadLine();
 int str1_int = Convert.ToInt32(str1);
-while(str1_int>1)
+int count = 2;
+while(count <= str1_int)
 {
-    if (str1_int%2==0)
-    {
-        Console.Write(", " + str1_int.ToString());
-    }
-   str1_int = str1_int - 1; 
+    Console.Write(count.ToString() + ", ");
+    count = count + 2; 
 }
