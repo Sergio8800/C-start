@@ -7,7 +7,7 @@ Console.WriteLine("numbers is trim: " + xAx + " - type is - " + xAx.GetType());
 // **solution through math**
 int numb1 = int_randomString / 10;
 int numb2 = numb1 % 10;
-Console.WriteLine($"Solution throuth math: number without midle pate is {numb2}");
+Console.WriteLine($"Solution throuth math: the number midle pate is {numb2}");
 //** second **
 int stringLongNumber = new Random().Next(1, 50000);
 Console.WriteLine("your inpun number: " + stringLongNumber);
