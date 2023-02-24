@@ -267,3 +267,44 @@ void PrintM3D(int[,,] masss)
     }
 }
 PrintM3D(x);
+
+//62. Напишите программу, которая заполнит спирально массив 4 на 4.
+//Например, на выходе получается вот такой массив:
+int[] tempEx= {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+int[,] arrSpiral = new int[4,4];
+int kkk = 0;
+int iii = 0;
+int tempAdaptor = 0;
+for (int j = 0; j < arrSpiral.GetLength(0); j++)
+{
+    arrSpiral[iii, j] = tempEx[kkk];
+    kkk++; tempAdaptor = j;
+}
+for (int i = iii+1; i < arrSpiral.GetLength(1); i++)
+{
+    arrSpiral[i, tempAdaptor] = tempEx[kkk];
+    kkk++; iii = i;
+}
+for (int j = tempAdaptor - 1; j >= 0; j--)
+{
+    arrSpiral[iii, j] = tempEx[kkk];
+    kkk++; tempAdaptor = j;
+}
+for (int i = iii - 1; i > 0; i--)
+{
+    arrSpiral[i, tempAdaptor] = tempEx[kkk];
+    kkk++; iii = i;
+}
+for (int j = tempAdaptor + 1; j < arrSpiral.GetLength(0) - 1; j++)
+{
+    arrSpiral[iii, j] = tempEx[kkk];
+    kkk++; tempAdaptor = j;
+}
+for (int j = tempAdaptor; j >0 ; j--)
+{
+    arrSpiral[iii+1, j] = tempEx[kkk];
+    kkk++; tempAdaptor = j;
+}
+
+P();
+PrintM(arrSpiral);
