@@ -3,7 +3,7 @@
         { 7, 8, 9 } };
 void PrintM(int[,] masss)
 {
-    Console.WriteLine("------print array------");
+    //Console.WriteLine("------print array------");
     for (int i = 0; i < masss.GetLength(0); i++)
     {
         for (int j = 0; j < masss.GetLength(1); j++)
@@ -13,10 +13,11 @@ void PrintM(int[,] masss)
         Console.WriteLine();
     }
 }
-void PS() { Console.WriteLine("--------Separator between parts-----"); }
+void PS(string str= "Separator between parts") { Console.WriteLine($"--------{str}-----"); }
 void P() { Console.WriteLine("--------Next Task-----"); }
 
 // 59:
+
 int[,] DelMin(int[,] arr)
 {
     int[,] mass = arr;
@@ -119,7 +120,7 @@ int[,] OrderedArr(int[,] array)
 }
 int[,] arrOrder = CreatArr(3, 5);
 PrintM(arrOrder);
-PS();
+PS("Строки упорядоченные по убыванию");
 PrintM(OrderedArr(arrOrder));
 //56: Задайте прямоугольный двумерный массив. Напишите программу,
 //которая будет находить строку с наименьшей суммой элементов.
@@ -173,21 +174,96 @@ int[,] MultiplicationMatrix(int[,] arr1, int[,] arr2)
             {
                 temp[k] = matrixOne[i, j] * matrixTwo[j, k];
                 // c11 = a11 · b11 + a12 · b21 
-
                 //c12 = a11 · b12 + a12 · b22
-                Console.Write($" {temp[k]} ");
+                //Console.Write($" {temp[k]} ");
                 result[i, k] = result[i, k] + temp[k];
-            } Console.WriteLine();
+            } //Console.WriteLine();
             //for (int s = 0; s < temp.Length; s++){ result[i, k] += temp[s];}
         }
         
 
     } return result;
 }
+P();
+PS("Первая матрица");
 PrintM(matrixOne);
+PS("Вторая матрица");
 PrintM(matrixTwo);
-PS();
+PS("Произведение");
 PrintM(MultiplicationMatrix(matrixOne, matrixTwo));
 //60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел.
 //Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 //Массив размером 2 x 2 x 2
+
+
+
+int[] CreatUnicumeArray(int size)
+{
+    int[] masive = new int[size];
+    //Console.WriteLine(masive[9]);
+    int k = 0;
+    int flag = 0;
+    while (masive[size-1]==0)
+    {    
+        int m = new Random().Next(1, 21);
+        for (int i = 0; i < masive.Length; i++)
+        {
+            if (masive[i] == m)
+            {
+
+                break;
+            }
+            flag = 1;
+        }
+        if (flag == 1)
+        {
+            masive[k] = m;
+            //Console.Write($"{masive[k]} ");
+            k++;
+        }   
+    }
+    return masive;
+}
+
+Console.WriteLine("Вывод массива с уникальными данными");
+int[,,] CreatArr3D(int a, int b, int c)
+{
+    int[,,] arr = new int[a, b, c];
+    int[] temp = CreatUnicumeArray(a * b * c);
+    int counterZ = 0;
+    for (int i = 0; i < a; i++)
+    {
+        for (int j = 0; j < b; j++)
+        {
+            for (int k = 0; k < c; k++)
+            {
+                //arr[i, j, k] = new Random().Next(1, 11);
+                // проверка на уникальность.
+                arr[i, j, k] = temp[counterZ];
+                counterZ++;
+            }
+
+        }
+    }
+    return arr;
+}
+int[,,] x = CreatArr3D(2, 2, 2);
+P();
+
+void PrintM3D(int[,,] masss)
+{
+
+    for (int i = 0; i < masss.GetLength(0); i++)
+    {
+        for (int j = 0; j < masss.GetLength(1); j++)
+        {
+            for (int k = 0; k < masss.GetLength(2); k++)
+            {
+                Console.Write($" {masss[i, j, k]} idex: ({i},{j},{k})");
+            }
+
+        }
+        Console.WriteLine();
+    }
+}
+PrintM3D(x);
